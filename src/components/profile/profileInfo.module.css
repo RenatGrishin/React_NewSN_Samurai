@@ -1,0 +1,78 @@
+.body{
+    display: grid;
+    grid-template-areas:
+        "ava nam con"
+        "ava say con";
+    grid-template-rows: 20px;
+    grid-template-columns: 120px 1fr 1fr;
+    padding-bottom: 30px;
+}
+.ava{
+    grid-area: ava;
+}
+.nam{
+    grid-area: nam;
+    padding-right: 15px;
+}
+.say{
+    grid-area: say;
+    padding-top: 20px;
+    padding-right: 15px;
+    display: grid;
+    grid-template-areas: "arrow status";
+    grid-template-columns: 15px 1fr;
+}
+.con{
+    padding-left: 15px;
+    grid-area: con;
+    line-height: 1.4em;
+}
+
+
+.avatar{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    float: left;
+    margin-right: 30px;
+}
+.name{
+    margin: 0;
+    margin-left: 30px;
+}
+.statusArray{
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-left: 15px;
+    grid-area: arrow;
+}
+.status{
+    grid-area: status;
+    background-color: #FFFFFF;
+    border-radius: 0 8px 8px 8px;
+    padding: 8px;
+    margin-left: 15px;
+}
+.statusEdit{
+    grid-area: status;
+    min-width: 90%;
+    border: 0px;
+    margin-left: 15px;
+    background-color: #FFFFFF;
+    border-radius: 0 8px 8px 8px;
+    padding: 8px;
+    color: darkgrey;
+    text-decoration: underline;
+}
+
+.con li span{
+    font-weight: normal;
+}
+.con li a{
+    text-decoration: none;
+}
+.con li a:hover{
+    text-decoration: underline;
+}

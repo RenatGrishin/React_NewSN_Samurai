@@ -1,0 +1,28 @@
+.main{
+    background-color: antiquewhite;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+            "h h"
+            "s p";
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 250px 10fr;
+}
+.header{
+    background-color: #d8d8d8;
+    grid-area: h;
+}
+.sidebar{
+    background-color: #ffffff;
+    grid-area: s;
+    border-right: 1px solid #d6d6d6;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.pages{
+    background-color: #f1f1f1;
+    grid-area: p;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+}

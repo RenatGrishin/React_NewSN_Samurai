@@ -1,0 +1,14 @@
+.header{
+    display: grid;
+    grid-template-areas:
+        "l u";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+.logo{
+    padding-left: 30px;
+}
+.userPanel{
+    padding-right: 30px;
+    text-align: right;
+}

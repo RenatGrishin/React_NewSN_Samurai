@@ -1,0 +1,50 @@
+.body{
+}
+.userCard{
+    width: 200px;
+    float: left;
+    margin-right: 3%;
+    margin-bottom: 30px;
+    background-color: #FFFFFF;
+    text-align: center;
+    display: grid;
+    grid-template:
+        "name"
+        "avatar"
+        "follow";
+    padding-bottom: 20px;
+}
+.userCard h3{
+    font-weight: 400;
+    font-size: 14px;
+    grid-area: name;
+}
+.userCard img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    grid-area: avatar;
+    margin: 0 auto;
+}
+.buttonArea{
+    grid-area: follow;
+}
+.buttonArea button{
+    border: 1px solid #D8D8D8;
+    border-radius: 3px;
+    margin-top: 20px;
+    padding: 4px 20px;
+    font-size: 14px;
+    font-weight: 200;
+}
+.buttonArea button:hover{
+    background-color: #D8D8D8;
+}
+.usersPages span{
+    cursor: pointer;
+}
+.pageSelected{
+    font-weight: 600;
+    cursor: default;
+}
