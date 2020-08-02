@@ -13,6 +13,7 @@ import {compose} from "redux";
 class userContainer extends React.Component{
     componentDidMount() {
         this.props.getUsersThunkCreator(this.props.page, this.props.pageSize);
+        debugger
     }
     selectPage =(numberPage)=>{
         this.props.getUsersThunkCreator(numberPage, this.props.pageSize);

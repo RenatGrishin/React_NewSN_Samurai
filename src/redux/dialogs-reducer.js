@@ -54,6 +54,7 @@ const dialogsReducer =(state=initialState, action)=>{
 }
 
 export let sendMessageActionCreator =(userId, text)=>{
+    debugger
     return{type: SEND_MESSAGE, id: userId, text: text}
 }
 export let draftMessageActionCreator =(id, text)=>{

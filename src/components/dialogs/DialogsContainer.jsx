@@ -3,6 +3,7 @@ import Dialogs from "./Dialogs";
 import {connect} from "react-redux";
 import {withAuthRedirect} from "../../hoc/withAuthRedirect";
 import {compose} from "redux";
+import {sendMessageActionCreator} from "../../redux/dialogs-reducer";
 
 let mapStateToProps =(state)=>{
     return{
@@ -11,8 +12,8 @@ let mapStateToProps =(state)=>{
 }
 let mapDispatchToProps =(dispatch)=>{
     return{
-        sendMSG :(text)=>{
-            dispatch(text)
+        sendMSG :(id, text)=>{
+            dispatch(sendMessageActionCreator(id, text))
         },
         draftMSG: (text)=>{dispatch(text)}
     }

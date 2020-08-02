@@ -6,12 +6,13 @@ import {connect} from "react-redux";
 class HeaderContainer extends React.Component{
     componentDidMount() {
         this.props.setAuthTC()
-        debugger
     }
 
     render() {
         return(
-            <Header {...this.props} />
+            <Header
+                login={this.props.login}
+            />
         )
     }
 }

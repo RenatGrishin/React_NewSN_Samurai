@@ -20,7 +20,6 @@ const authReducer =(state=initialState, action)=>{
             stateCopy.data = {...action.data}
             stateCopy.resultCode = 1
             stateCopy.isAuth = true
-            debugger
             return stateCopy
         default: return state
     }
